@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			html,body{
+				width: 100%;
+				height: 100%;
+				/*孩子比父亲大，应该怎么办*/
+				overflow: hidden;
+			}
+			.tree{
+				width: 600px;
+				position: absolute;
+				bottom: -50px;
+				left: 400px;
+			}
+			.xr{
+				width:200px;
+				position:absolute;
+				left:-200px;
+				bottom: 0;
+				/*指定动画的名字*/
+				animation-name: run;
+				/*指定动画的时间*/
+				animation-duration: 5s;
+				/*指定动画补间是线性变化*/
+				animation-timing-function: linear;
+				/*动画什么时候播放*/
+				animation-fill-mode: both;
+			}
+			/*@keyframes run{
+				from{left:-200px;}
+				to{left:800px;}
+			}*/
+			@keyframes run{
+			0%{}
+			35%{left:400px;}
+			60%{left:600px;}
+			100%{left: 800px;}
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<img class="tree" src="img/tree.png" />
+		<img class="xr" src="img/xr.png" />
+	</body>
+</html>

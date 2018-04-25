@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*1、标签类型选择器*/
+			a{
+				text-decoration: none;
+			}
+			/*2、包含选择符*/
+			span[class=demo]{
+				color:red;
+			}
+			/*3、内部包含选择符*/
+			div a{
+				text-decoration: underline;
+				font-size: 30px;
+				color:#ff00ff;
+			}
+			/*4、子对象选择符*/
+			body>p{
+				font-size:34px;
+			}
+			/*5、id选择符*/
+			#content{
+				border-style: solid;
+			}
+			/*6、类选择器*/
+			.note{
+				font-size: 34px;
+			}
+			span.note1{
+				font-size: 54px;
+			}
+			/*分组选择器*/
+			td,div,a{
+				
+			}
+		</style>
+	</head>
+	<body>
+		<a href="http://www.baidu.com/">百度一下</a>
+		<br />
+		<span class="demo">我是一个块</span>
+		<div>
+			<a href="http://www.baidu.com/">百度一下</a>
+		</div>
+		<p>我是一个段落</p>
+		<div>
+			<p>我是也一个段落</p>
+		</div>
+		<div id="content">我是内容</div>
+		<div class="note">我是一个div</div>
+		<span class="note1">我是一个span</span>
+	</body>
+</html>
